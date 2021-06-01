@@ -250,8 +250,9 @@ echo "openstack-ansible wrapper created."
 if [ -f "${ANSIBLE_ROLE_FILE}" ]; then
   if [[ "${ANSIBLE_ROLE_FETCH_MODE}" == 'galaxy' ]];then
     # Pull all required roles.
-    ansible-galaxy install --role-file="${ANSIBLE_ROLE_FILE}" \
-                           --force
+#    ansible-galaxy install --role-file="${ANSIBLE_ROLE_FILE}" \
+#                           --force
+    ansible-galaxy install --role-file="${ANSIBLE_ROLE_FILE}"
   elif [[ "${ANSIBLE_ROLE_FETCH_MODE}" == 'git-clone' ]];then
     pushd tests
       ansible-playbook get-ansible-role-requirements.yml \

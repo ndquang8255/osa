@@ -1,14 +1,17 @@
 - name: ansible-hardening
   scm: git
-  src: https://git.openstack.org/openstack/ansible-hardening
+#  src: https://git.openstack.org/openstack/ansible-hardening
+  src: https://opendev.org/openstack/ansible-hardening.git
   version: e4348d9254a0b5ece58dbdde0e62beabeb91acde
 - name: apt_package_pinning
   scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-apt_package_pinning
+#  src: https://git.openstack.org/openstack/openstack-ansible-apt_package_pinning
+  src: https://opendev.org/openstack/openstack-ansible-apt_package_pinning.git
   version: b666c4b8cedb208294900b58e382d425654a95d8
 - name: pip_install
   scm: git
-  src: https://git.openstack.org/openstack/openstack-ansible-pip_install
+#  src: https://git.openstack.org/openstack/openstack-ansible-pip_install
+  src: https://opendev.org/openstack/openstack-ansible-pip_install.git
   version: 376cc6a3f2e375082f002be3e458591d730b7105
 - name: galera_client
   scm: git
@@ -172,17 +175,21 @@
   version: 56f3a77cc323a3f22245c796c1a43c39c5638599
 - name: ceph.ceph-common
   scm: git
-  src: https://github.com/ceph/ansible-ceph-common
+#  src: https://github.com/ceph/ansible-ceph-common
+  src: https://git.lstn.net/mirror/ansible-ceph-common.git
   version: v2.2.9
 - name: ceph.ceph-docker-common
   scm: git
-  src: https://github.com/ceph/ansible-ceph-docker-common
+#  src: https://github.com/ceph/ansible-ceph-docker-common
+  src: https://git.lstn.net/mirror/ansible-ceph-docker-common.git
   version: ca86fd0ef6d24aa2c750a625acdcb8012c374aa0
 - name: ceph-mon
   scm: git
-  src: https://github.com/ceph/ansible-ceph-mon
+#  src: https://github.com/ceph/ansible-ceph-mon
+  src: https://git.lstn.net/mirror/ansible-ceph-mon.git
   version: v2.2.9
 - name: ceph-osd
   scm: git
-  src: https://github.com/ceph/ansible-ceph-osd
+#  src: https://github.com/ceph/ansible-ceph-osd
+  src: https://git.lstn.net/mirror/ansible-ceph-osd.git
   version: v2.2.9
